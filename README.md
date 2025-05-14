@@ -38,13 +38,3 @@ TBD ...
 ### Inference
 See [inference.ipynb](inference.ipynb) for more details. 
 
-### Citation
-
-```
-@article{kristofer2025e2fnet,
-  title   = {From Brainwaves to Brain Scans: A Robust Neural Network for EEG-to-fMRI Synthesis},
-  author  = {Kristofer Grover Roos and Atsushi Fukuda and Quan Huu Cap},
-  journal = {arXiv preprint},
-  year    = {2025}
-}
-```
