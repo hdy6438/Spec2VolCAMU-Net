@@ -1,9 +1,6 @@
 ## Spec2VolCAMU-Net
 **A Spectrogram-to-Volume Model for EEG-to-fMRI Reconstruction based on Multi-directional Time-Frequency Convolutional Attention Encoder and Vision-Mamba U-Net**
 
-**Authors**: Kristofer Grover Roos, Atsushi Fukuda, Quan Huu Cap<br>
-**Paper**: https://arxiv.org/abs/2502.08025<br>
-
 **Abstract**
 While functional magnetic resonance imaging (fMRI) offers rich spatial resolution, it is limited by high operational costs and significant infrastructural demands. 
 In contrast, electroencephalography (EEG) provides millisecond-level precision in capturing electrical activity but lacks the spatial resolution necessary for precise neural localization. 
