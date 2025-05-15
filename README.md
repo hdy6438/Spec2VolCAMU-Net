@@ -2,7 +2,9 @@
 **A Spectrogram-to-Volume Model for EEG-to-fMRI Reconstruction based on Multi-directional Time-Frequency Convolutional Attention Encoder and Vision-Mamba U-Net**
 
 **Authors:** Dongyi He, Shiyang Li, Bin Jiang, He Yan
+
 **Affiliation:** School of Artificial Intelligence, Chongqing University of Technology, Chongqing, China
+
 **Paper:** https://arxiv.org/abs/2505.09521
 
 **Graphical Abstract**
