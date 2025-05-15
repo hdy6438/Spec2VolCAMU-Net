@@ -27,7 +27,6 @@ Modify [run_bash.sh](run_train.sh) and run
 ```bash
 bash run_train.sh
 ```
-**Note: The current code loads ALL training data to RAM, if you don't have enough RAM, please modify the [eeg2fmri_datasets.py](eeg2fmri_datasets.py) to load smaller chunks of data**
 
 ### Pre-trained models
 TBD ...
