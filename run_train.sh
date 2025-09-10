@@ -42,6 +42,42 @@ CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI.py --dataset Oddball --tes
 
 CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2
 
+
+
+
+#CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --ablation_decoder true
+
+CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --ablation_encoder_use_multi_scale_time
+CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --ablation_encoder_use_multi_scale_freq
+export $(cat /proc/1/environ |tr '\0' '\n' | grep MATCLOUD_CANCELTOKEN)&&/public/script/matncli node cancel -url https://matpool.com/api/public/node
+
+
+CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --ablation_encoder_use_multi_scale_joint
+CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --ablation_encoder_use_multi_scale_time --ablation_encoder_use_multi_scale_freq
+CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --ablation_encoder_use_multi_scale_time --ablation_encoder_use_multi_scale_joint
+export $(cat /proc/1/environ |tr '\0' '\n' | grep MATCLOUD_CANCELTOKEN)&&/public/script/matncli node cancel -url https://matpool.com/api/public/node
+
+CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --ablation_encoder_use_multi_scale_freq --ablation_encoder_use_multi_scale_joint
+CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --ablation_encoder_use_self_attention
+export $(cat /proc/1/environ |tr '\0' '\n' | grep MATCLOUD_CANCELTOKEN)&&/public/script/matncli node cancel -url https://matpool.com/api/public/node
+
+
+
+#CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --lambda_ssim 0.0 --lambda_mse 1.0
+#export $(cat /proc/1/environ |tr '\0' '\n' | grep MATCLOUD_CANCELTOKEN)&&/public/script/matncli node cancel -url https://matpool.com/api/public/node
+#
+#CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --lambda_ssim 0.2 --lambda_mse 0.8
+#CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --lambda_ssim 0.4 --lambda_mse 0.6
+#CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --lambda_ssim 0.6 --lambda_mse 0.4
+#export $(cat /proc/1/environ |tr '\0' '\n' | grep MATCLOUD_CANCELTOKEN)&&/public/script/matncli node cancel -url https://matpool.com/api/public/node
+#
+#CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --lambda_ssim 0.8 --lambda_mse 0.2
+#CUDA_VISIBLE_DEVICES=0 python3 train_Spectrogram2fMRI_abtion.py --dataset CNEPFL --test_ids sub-21 sub-22 sub-24 sub-26 --fmri_channel 30 --exp_root ./run/CNEPFL --batch_size 16 --num_epochs 50 --lr 0.001 --gradient_accumulation_steps 2 --lambda_ssim 1.0 --lambda_mse 0.0
+#export $(cat /proc/1/environ |tr '\0' '\n' | grep MATCLOUD_CANCELTOKEN)&&/public/script/matncli node cancel -url https://matpool.com/api/public/node
+#
+
+
+
 # ## To train E2fGAN
 # CUDA_VISIBLE_DEVICES=0 python train_E2fGAN.py \
 # --dataset NODDI \

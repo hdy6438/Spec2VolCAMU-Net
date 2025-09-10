@@ -129,6 +129,7 @@ def create_unet(in_channels=256, out_channels=256):
             "UpBlock2D", 
             "UpBlock2D", 
         ),
+        norm_num_groups=out_channels // 8
     )
 
 class EEG2fMRINet(nn.Module):
