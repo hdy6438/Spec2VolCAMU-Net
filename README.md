@@ -5,7 +5,9 @@
 
 **Affiliation:** School of Artificial Intelligence, Chongqing University of Technology, Chongqing, China
 
-**Paper:** https://arxiv.org/abs/2505.09521
+**Paper:** http://doi.org/10.1088/1741-2552/ae15bf
+
+**Journal:** Journal of Neural Engineering
 
 **Graphical Abstract**
 ![Graphical Abstract](paper_img/model.jpg)
